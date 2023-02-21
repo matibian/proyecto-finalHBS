@@ -1,0 +1,80 @@
+<html lang='es'>
+  <head>
+    {{>head}}
+  </head>
+  <body>
+    <div class="title">
+      {{{title}}}
+    </div>
+    <br>
+
+
+
+      <div class="container-md" style="width: 100vh">
+
+
+
+        <table class="table align-content-center">
+        <tbody id="tbodyProdTest">
+          <tr>
+            <td>Argumentos: </td>
+            <td>{{argumentos}} </td>
+          </tr>
+          <tr>
+            <td>Path: </td>
+            <td>{{path}} </td>
+          </tr>
+          <tr>
+            <td>PID: </td>
+            <td>{{PID}} </td>
+          </tr>
+          <tr>
+            <td>Version: </td>
+            <td>{{version}} </td>
+          </tr>
+          <tr>
+            <td>Carpeta: </td>
+            <td>{{carpeta}} </td>
+          </tr>
+          <tr>
+            <td>Sistema : </td>
+            <td>{{OS}} </td>
+          </tr>
+          <tr>
+            <td>Memoria total reservada (rss) : </td>
+            <td>{{memoryUsage}} </td>
+          </tr>
+        </tbody>
+        </table>
+
+
+
+      </div>
+
+
+
+
+{{!-- <div class="container">
+  <form onsubmit="return false" class="d-flex align-items-center flex-column">
+    <div class="mb-3">
+        <input
+        type="text"
+        id="usuario"
+        placeholder="Usuario"
+        name="username"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+        type="text"
+        id="contraseña"
+        placeholder="Contraseña"
+        name="password"
+        />
+    </div>
+    <button type="submit" onclick="botonProd()" class="btn btn-secondary">Login</button>
+</form>
+</div> --}}
+
+  </body>
+</html>

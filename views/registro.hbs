@@ -1,0 +1,53 @@
+<html lang='es'>
+  <head>
+    {{>head}}
+  </head>
+  <body>
+    <div class="title">
+      {{{title}}}
+    </div>
+    <br>
+            <div class="row justify-content-md-center">
+              <div class="col-md-6">
+                <div class="card mt-4">
+                  <div class="card-body">
+  <form 
+    {{!-- onsubmit="return false"  --}}
+    action="/registro"
+    method="post"
+    class="d-flex align-items-center flex-column">
+    <div class="mb-3">
+        <input
+        type="text"
+        id="username"
+        placeholder="Usuario"
+        name="username"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+        type="text"
+        id="password"
+        placeholder="Contraseña"
+        name="password"
+        />
+    </div>
+    <button 
+        type="submit" 
+        {{!-- onclick="login()"  --}}
+        class="btn btn-secondary">Registro</button>
+    </form>
+                <b class="faltareg" style="text-align-last: center;">
+                    <a class="nav-link" href="./registro.html">No estas registrado?</a>
+                    
+                </b>
+</div>
+</div>
+</div>
+</div>
+
+  <script src="../index.js"></script>
+  </body>
+     {{> footer}}
+  
+</html>

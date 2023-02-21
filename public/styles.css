@@ -1,0 +1,65 @@
+.title {
+  text-align: center;
+  color: #6c757e;
+  font-size: 30px;
+}
+
+.product-img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 50px;
+}
+
+.trash {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+body {
+  background-color: white !important;
+}
+.form-inputs {
+  position: relative;
+}
+.form-inputs .form-control {
+  height: 45px;
+}
+
+.form-inputs .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #000;
+}
+
+.form-inputs i {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.shop-bag {
+  background-color: #000;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty {
+  font-size: 12px;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-button i {
+  font-size: 25px;
+}

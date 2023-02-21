@@ -1,0 +1,97 @@
+<html lang='es'>
+  <head>
+    {{>head}}
+  </head>
+  <body>
+    <br>
+    <br>
+    <div class="title">
+      {{{title}}}
+    </div>
+    <br>
+            <div class="row justify-content-md-center">
+              <div class="col-md-6">
+                <div class="card mt-4" style="margin-top: 0px !important">
+                  <div class="card-body">
+  <form 
+    {{!-- onsubmit="return false"  --}}
+    action="/registro"
+    method="post"
+    class="d-flex align-items-center flex-column">
+    <div class="mb-3">
+        <input
+        type="mail"
+        id="username"
+        placeholder="Mail"
+        name="username"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+        type="text"
+        id="password"
+        placeholder="Contraseña"
+        name="password"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+        type="name"
+        id="name"
+        placeholder="Nombre"
+        name="name"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+        type="text"
+        id="dir"
+        placeholder="Dirección"
+        name="dir"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+        type="number"
+        id="age"
+        placeholder="Edad"
+        name="age"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+        type="phone"
+        id="phone"
+        placeholder="Teléfono"
+        name="phone"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+        type="text"
+        id="avatar"
+        placeholder="Inserte foto"
+        name="avatar"
+        />
+    </div>
+    <button 
+        type="submit" 
+        {{!-- onclick="login()"  --}}
+        class="btn btn-secondary">Registrar</button>
+    </form>
+                <b class="faltareg" style="text-align-last: center;">
+                    <a class="nav-link" href="./login">Ya estas registrad@?</a>
+                    
+                </b>
+</div>
+</div>
+</div>
+</div>
+
+  <script src="../index.js"></script>
+  </body>
+  <br>
+  <br>
+     {{> footer}}
+  
+</html>

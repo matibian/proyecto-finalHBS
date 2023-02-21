@@ -1,0 +1,43 @@
+{
+  "name": "desafio-9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Container.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "bcrypt": "^5.1.0",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "express-session": "^1.17.3",
+    "faker": "^6.6.6",
+    "faker-js": "^1.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "knex": "^2.4.2",
+    "log4js": "^6.8.0",
+    "minimist": "^1.2.7",
+    "moment": "^2.29.4",
+    "mongoose": "^6.8.1",
+    "mongoose-findorcreate": "^3.0.0",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.9.1",
+    "normalizr": "^3.6.2",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "session": "^0.1.0",
+    "socket.io": "^4.6.0",
+    "twilio": "^4.7.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0"
+  }
+}

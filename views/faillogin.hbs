@@ -1,0 +1,105 @@
+<html lang='es'>
+  <head>
+    {{>head}}
+  </head>
+  <body>
+    <div class="title">
+      {{{title}}}
+    </div>
+    <br>
+
+
+  <main role="main" class="flex-shrink-0">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="text-muted font-weight-light mt-4" class="titulo" id="titulo">
+              Ingresar
+            </h1>
+            <div class="row justify-content-md-center">
+              <div class="col-md-6">
+                <div class="card mt-4">
+                  <div class="card-body">
+                    <form     action="/login"
+    method="post">
+                      <div class="form-group">
+                        <label for="email" class="text-muted"
+                          >Correo Electrónico</label
+                        >
+                        <input
+        type="text"
+        id="usuario"
+        placeholder="Usuario"
+        name="username"
+        />
+                      </div>
+                      <div class="form-group pb-2">
+                        <label for="password" class="text-muted"
+                          >Contraseña</label
+                        >
+                        <input
+        type="text"
+        id="contraseña"
+        placeholder="Contraseña"
+        name="password"
+        />
+                      </div>
+                      <div
+                        class="d-none text-danger py-1 rounded small"
+                        role="alert"
+                        id="error"
+                      >
+                        Error en correo electrónico o contraseña
+                      </div>
+                      <hr class="mt-2" />
+                      <div class="form-group mt-2 mb-1">
+                          <button
+                          type="submit"
+                          class="btn btn-block btn-light text-muted"
+                          >
+                          Ingresar
+                        </button>
+                    </div>
+                </form>
+                <b class="faltareg">
+                    <a class="nav-link" href="./registro.html">No estas registrado?</a>
+                    
+                </b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+{{!-- <div class="container">
+  <form onsubmit="return false" class="d-flex align-items-center flex-column">
+    <div class="mb-3">
+        <input
+        type="text"
+        id="usuario"
+        placeholder="Usuario"
+        name="username"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+        type="text"
+        id="contraseña"
+        placeholder="Contraseña"
+        name="password"
+        />
+    </div>
+    <button type="submit" onclick="botonProd()" class="btn btn-secondary">Login</button>
+</form>
+</div> --}}
+
+  <script src="../index.js"></script>
+      <script src="http://fprode.nachofernan.com/assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="http://fprode.nachofernan.com/assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+   {{> footer}}
+</html>

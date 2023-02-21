@@ -1,0 +1,28 @@
+<div class="container">
+  <ul class="products">
+    <div class="row">
+      {{#each products}}
+        <div class="col">
+          <div
+            class="card"
+            style="width: 12rem; margin: 30px 0; text-align : center "
+          >
+            <img
+              src="{{thumbnail}}"
+              class="card-img-top"
+              alt="{{name}}"
+              style="height: 220px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{name}}</h5>
+              <p class="card-text">{{price}}</p>
+              <form action="/cart/prod/{{_id}}" method="post">
+                <button class="btn btn-primary">Agregar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </ul>
+</div>

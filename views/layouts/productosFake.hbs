@@ -1,0 +1,48 @@
+<html lang='es'>
+  <head>
+    {{>head}}
+  </head>
+  <body>
+
+    <div class="title">
+      {{{title}}}
+    </div>
+    <br>
+      
+  <div class="row justify-content-center">
+    <div class="col-auto">
+  <table class="table align-content-center">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Producto</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Imagen</th>
+      </tr>
+    </thead>
+    <tbody id="tbodyProdTest">
+      {{#each prodFake}}
+
+                <tr>
+                <td>{{this.id}} </th>
+                <td>{{name}} </td>
+                <td>${{price}} </td>
+                <td><img src="{{thumbnail}}" class="product-img"/></td>
+
+    {{/each}}
+  
+  </div>
+  </div>
+  </div>
+
+
+</tbody>
+</table>
+
+    </div>
+
+    
+
+  </body>
+   {{> footer}}
+</html>

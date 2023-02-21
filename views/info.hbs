@@ -1,0 +1,68 @@
+<html lang='es'>
+  <head>
+    {{>head}}
+  </head>
+  <body>
+    <div class="title">
+      {{{title}}}
+    </div>
+    <br>
+
+
+  <main role="main" class="flex-shrink-0">
+      <div class="container">
+        <table class="table align-content-center">
+    <tbody id="tbodyProdTest">
+
+                <tr>
+                  <td>Argumentos: </td>
+                  <td>{{data.argumentos}} </td>
+                </tr>
+                <tr>
+                  <td>Path: </td>
+                  <td>{{data.path}} </td>
+                </tr>
+
+
+
+                <td>${{price}} </td>
+                <td><img src="{{thumbnail}}" class="product-img"/></td>
+
+                  path: path, PID: PID, version: version, carpeta: carpeta, OS: OS, memoryUsage: memoryUsage
+
+  
+  </div>
+  </div>
+  </div>
+
+
+</tbody>
+</table>
+      </div>
+    </main>
+
+
+{{!-- <div class="container">
+  <form onsubmit="return false" class="d-flex align-items-center flex-column">
+    <div class="mb-3">
+        <input
+        type="text"
+        id="usuario"
+        placeholder="Usuario"
+        name="username"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+        type="text"
+        id="contraseña"
+        placeholder="Contraseña"
+        name="password"
+        />
+    </div>
+    <button type="submit" onclick="botonProd()" class="btn btn-secondary">Login</button>
+</form>
+</div> --}}
+
+  </body>
+</html>

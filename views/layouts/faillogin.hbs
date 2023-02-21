@@ -1,0 +1,64 @@
+<html lang='es'>
+  <head>
+    {{>head}}
+  </head>
+  <body>
+    <div class="title">
+      {{{title}}}
+    </div>
+    <br>
+
+
+  <main role="main" class="flex-shrink-0">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="text-muted font-weight-light mt-4" class="titulo" id="titulo" style="color:red !important">
+              ERROR
+            </h1>
+            <div class="row justify-content-md-center">
+              <div class="col-md-6">
+                <div class="card mt-4">
+                  <div class="card-body">
+                   
+                  Las credenciales son inválidas
+                  <br>
+                  <br>
+                <b class="faltareg">
+                    <a class="nav-link" href="./login">Volver a intentar</a>
+                    
+                </b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+{{!-- <div class="container">
+  <form onsubmit="return false" class="d-flex align-items-center flex-column">
+    <div class="mb-3">
+        <input
+        type="text"
+        id="usuario"
+        placeholder="Usuario"
+        name="username"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+        type="text"
+        id="contraseña"
+        placeholder="Contraseña"
+        name="password"
+        />
+    </div>
+    <button type="submit" onclick="botonProd()" class="btn btn-secondary">Login</button>
+</form>
+</div> --}}
+
+  </body>
+</html>
