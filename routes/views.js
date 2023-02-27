@@ -43,7 +43,9 @@ const transporter = nodemailer.createTransport({
 
 async function getRoot(req, res) {
   let products = await ContProd.getAll();
+  console.log(req.session.user);
   let user = await ContUsers.getAll(req.session.user);
+  console.log(user);
   res.render("inicio.hbs", {
     products: products,
     user: user,

@@ -10,7 +10,9 @@ class ContenedorMongoDB {
 
   async getAll(username) {
     if (username) {
-      const user = await this.model.findOne({ user: username }).lean();
+      const user = await this.model.findOne({ username: username }).lean();
+      console.log(1, user);
+      console.log(1, username);
       return user;
     } else {
       return "usuario no encontrado";

@@ -15,8 +15,7 @@ class ContenedorMongoDB {
 
   async getAll(username) {
     if (username) {
-      const user = await this.model.findOne({ user: username }).cart.lean();
-      // console.log(user)
+      const user = await this.model.findOne({ username: username }).cart.lean();
 
       return user;
     } else {
@@ -28,22 +27,18 @@ class ContenedorMongoDB {
     let prod = {};
     try {
       const userCart = await this.model.findOne(user._id);
-      console.log(user._id);
       if (!userCart.cart.find((p) => p._id == id)) {
         prod = await ContProd.getById(id);
         prod.timestamp = await timestamp;
         prod.quant = 1;
         userCart.cart.push(prod);
-        console.log("NOOooooo", userCart);
         await userCart.save();
       } else {
         const userCart = await this.model.findOne(user._id);
-        console.log(userCart);
         const productIndex = await userCart.cart.findIndex(
           (product) => product._id == id
         );
         await userCart.cart[productIndex].quant++;
-        console.log(userCart);
         userCart.markModified("cart");
         await userCart.save();
       }
